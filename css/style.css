@@ -1,0 +1,22 @@
+
+  .logo{
+    margin-top: 20px;
+  }
+
+  .row{
+    padding-top: 20px;
+  }
+
+  .main-title{
+    color: #2880ba;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  .row-spacer{
+    margin-bottom: 60px;
+  }
+
+  .col-spacer{
+    margin-bottom: 20px;
+    padding: 0 40px;
+  }
