@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded',function(){
     var sHeader = JSON.stringify(oHeader);
     var sPayload = JSON.stringify(oPayload);
     var sJWT = KJUR.jws.JWS.sign("HS256", sHeader, sPayload, '5461636f2050617274792121212121');
-    console.log('isValid',isValid);
     regWrap.innerHTML = '<h3>Registration Complete!</h3><b>Registration Code:</b> <textarea class="form-control" rows="4">' + sJWT + '</textarea><div class="help-text">Copy this code into Final Markdown to register.</div>';
   })
 
