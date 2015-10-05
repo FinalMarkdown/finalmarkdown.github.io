@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded',function(){
   regForm.addEventListener('submit',function(e){
     e.preventDefault();
     var serial = regText.value;
-    if(!serial || serial.length < 20) return alert('Please enter a valid serial number.');
+
+    if(!serial || !serial.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)) return alert('Please enter a valid serial number.');
 
     //generate JWT registration code
     var oHeader = {alg: 'HS256', typ: 'JWT'};
